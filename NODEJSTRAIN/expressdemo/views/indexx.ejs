@@ -1,0 +1,66 @@
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<form action = "/people" method = get >
+    <div class = col-lg-4>
+    <div class="form-group">
+            <label for="name">name</label>
+            <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Enter name">
+            <label for="name">address</label>
+            <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Enter name">
+            <label for="name">mobile number</label>
+            <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Enter name">
+            <label for="name">email</label>
+            <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Enter name">
+            <label for="name">password</label>
+            <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Enter name"><br>
+            <button class = "btn btn-success" type = "submit">submit</button>  
+        </div>
+            
+          </div>
+    <!-- name : <input type = "text" name = name><br>
+    address : <input type = "text" name = address>
+    mobile number : <input type = "number" name = mobile>
+    email : <input type = "email" name = email>
+    password: <input type = "password" name = password>
+    <button type = "submit">submit</button>      -->
+</form>                      
+
+<!-- <ul>
+        <% for(var i=0; i<daaaata.length; i++ ) { %>
+        
+            <li>
+                <span> <%= daaaata[i].name %> </span>
+                <span> <%= daaaata[i].address %> </span>
+                <span> <%= daaaata[i].mobile %> </span>
+                <span> <%= daaaata[i].email %> </span>
+                <span> <%= daaaata[i].password %> </span>
+            </li>
+        <% } %>
+    </ul> -->
+    
+    <div class = col-lg-4>
+    <table class="table" >
+           
+                    <thead>
+            <tr>
+              <th scope="col">Name </th> 
+              <th scope="col">address</th>
+              <th scope="col"> mobile </th>
+              <th scope="col"> email </th>
+              <th scope="col"> password </th>
+            </tr>
+            </thead>
+            <% for(var i=0; i<daaaata.length; i++ ) { %>
+            <tbody>
+            <tr>
+              <td> <%= daaaata[i].name %> </td>
+              <td> <%= daaaata[i].address %></td>
+              <td><%= daaaata[i].mobile %></td>
+              <td><%= daaaata[i].email %></td>
+              <td><%= daaaata[i].password %></td>
+            </tr>
+        </tbody>
+          </table> <% } %>
+        </div>
